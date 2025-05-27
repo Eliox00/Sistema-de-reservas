@@ -1,0 +1,183 @@
+/* src/index.css */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Estilos personalizados para el Centro Deportivo */
+.App {
+  min-height: 100vh;
+}
+
+/* Mejoras visuales para las cards */
+.card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Estilos para el hero section */
+.bg-primary {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%) !important;
+}
+
+/* Animaciones suaves para badges */
+.badge {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Mejoras para la tabla */
+.table th {
+  border-top: none;
+  font-weight: 600;
+  color: #495057;
+  font-size: 0.9rem;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 123, 255, 0.05);
+}
+
+/* Estilos para botones */
+.btn {
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Estilos para modales */
+.modal-header {
+  border-bottom: 2px solid #e9ecef;
+}
+
+.modal-footer {
+  border-top: 2px solid #e9ecef;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+  
+  .lead {
+    font-size: 1rem;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+/* Estilos para estadísticas */
+.border-primary { border-color: #007bff !important; }
+.border-success { border-color: #28a745 !important; }
+.border-danger { border-color: #dc3545 !important; }
+.border-warning { border-color: #ffc107 !important; }
+.border-info { border-color: #17a2b8 !important; }
+.border-secondary { border-color: #6c757d !important; }
+
+/* Animación de carga */
+.spinner-border {
+  color: #007bff;
+}
+
+/* Mejoras para alertas */
+.alert {
+  border: none;
+  border-radius: 8px;
+}
+
+/* Estilos para formularios */
+.form-control:focus,
+.form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Estilos para el navbar */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+/* Estilos para tabs */
+.nav-tabs .nav-link {
+  border-radius: 8px 8px 0 0;
+  font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+/* Efectos de hover para elementos interactivos */
+.nav-link:hover,
+.btn-outline-primary:hover,
+.btn-outline-secondary:hover,
+.btn-outline-success:hover,
+.btn-outline-danger:hover {
+  transform: translateY(-1px);
+}
+
+/* Espaciado mejorado */
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+/* Estilos para iconos */
+.display-4 {
+  font-size: 2.5rem;
+}
+
+/* Mejoras de accesibilidad */
+a:focus,
+button:focus,
+.btn:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Estilos para el estado de carga */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
